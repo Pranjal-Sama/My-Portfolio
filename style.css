@@ -253,3 +253,22 @@ span {
         padding-top: 6rem; /* Adjust padding for smaller screens */
     }
 }
+.menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 101; /* Ensure it sits above other content */
+}
+
+@media (max-width: 995px) {
+    .menu-toggle {
+        display: inline-block; /* Show toggle button on smaller screens */
+    }
+
+    nav.active {
+        display: block; /* Ensure nav is visible when 'active' */
+    }
+}
